@@ -7,14 +7,14 @@ public class ManagementRessources : MonoBehaviour {
 	// Basic income of resources, hardcoded for now..
 	public int water = 1000;
 	public int food = 1000;
-	public int fuel = 200;
+	//public int fuel = 200;
 	public int rawMaterial = 50;
 	public int comburant = 0;
-	public int energy = 0;
+	public int energy = 200;
 
 	public int maxWater = 2000;
 	public int maxFood = 1500;
-	public int maxFuel = 400;
+	//public int maxFuel = 400;
 	public int maxRawMaterial = 100;
 	public int maxComburant = 100;
 	public int maxEnergy = 200;
@@ -57,7 +57,7 @@ public class ManagementRessources : MonoBehaviour {
 	}
 
 	public void DisplayResources () {
-		waterResourcesText.text = "Water : " + water;
-		foodResourcesText.text = "Food : " + food;
+		waterResourcesText.text = "Water : " + water + " / " + maxWater;
+		foodResourcesText.text = "Food : " + food + " / " + maxFood;
 	}
 }

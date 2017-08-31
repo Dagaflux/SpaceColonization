@@ -50,7 +50,6 @@ public class BuildManager: MonoBehaviour
 	{
 		LastSelectedBuilding = SelectedBuilding;
         isBuildingEnabled = false;
-
     }
 
     public void ActivateBuildingmode()

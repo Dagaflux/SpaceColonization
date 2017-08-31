@@ -1515,13 +1515,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   water: 1000
   food: 1000
-  fuel: 200
   rawMaterial: 50
   comburant: 0
   energy: 0
   maxWater: 2000
   maxFood: 1500
-  maxFuel: 400
   maxRawMaterial: 100
   maxComburant: 100
   maxEnergy: 200
