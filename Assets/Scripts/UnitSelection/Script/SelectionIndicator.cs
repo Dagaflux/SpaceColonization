@@ -13,8 +13,12 @@ public class SelectionIndicator : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (mm.selectedObject != null) {
-			this.transform.position = mm.selectedObject.transform.position;
-			Debug.Log (this.transform.position + " / " + mm.selectedObject.transform.position);
+			Bounds bigBounds = mm.selectedObject.GetComponentInChildren<Renderer> ().bounds;
+
+			float margin = 2f;
+
+			this.transform.position = new Vector3(bigBounds.center.x, 0, bigBounds.center.z);
+			this.transform.localScale = new Vector3 (bigBounds.size.x * margin, bigBounds.size.y, bigBounds.size.z * margin);
 		}
 	}
 }
